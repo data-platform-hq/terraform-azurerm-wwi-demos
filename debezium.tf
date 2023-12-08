@@ -68,4 +68,3 @@ module "debezium" {
 
   depends_on = [module.eventhub, module.mssql_server]
 }
-
