@@ -1,20 +1,20 @@
 output "eventhub" {
-  value       = try(module.eventhub[0].*, null)
+  value       = try(module.eventhub[0][*], null)
   description = "Eventhub related outputs"
 }
 
 output "mssql_server" {
-  value       = try(module.mssql_server[0].*, null)
+  value       = try(module.mssql_server[0][*], null)
   description = "MSSQL Server related outputs"
 }
 
 output "mssql_database" {
-  value       = try(module.mssql_database[0].*, null)
+  value       = try(module.mssql_database[0][*], null)
   description = "MSSQL Database elated outputs"
 }
 
 output "wwi_demo_virtual_machine" {
-  value       = try(module.wwi_demo_virtual_machine[0].*, null)
+  value       = try(module.wwi_demo_virtual_machine[0][*], null)
   description = "Microsoft WWI SQL Server related outputs"
 }
 
