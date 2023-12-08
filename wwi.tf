@@ -43,7 +43,7 @@ module "wwi_demo_virtual_machine_extension" {
     name               = "wwi-backup-restoration"
     virtual_machine_id = try(module.wwi_demo_virtual_machine[0].id, null)
     settings = jsonencode({
-      "script" : (base64encode(templatefile("../../scripts/microsoft_wwi_demo_backup_restore.sh", {
+      "script" : (base64encode(templatefile("${path.module}/scripts/microsoft_wwi_demo_backup_restore.sh", {
         mssql_sa_password = random_password.wwi_demo_login_password[0].result
       })))
     })
