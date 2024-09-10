@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/data-platform-hq/terraform-azurerm-wwi-demos/compare/v1.0.0...v1.0.1) (2024-09-10)
+
+
+### Bug Fixes
+
+* replaced pre-commit repo docs creation/update by GH Actions ([20ec98f](https://github.com/data-platform-hq/terraform-azurerm-wwi-demos/commit/20ec98fd177ac215156549df513ea8aa4f02d926))
+* upgrade to mssql_database v1.1.0 ([481ddeb](https://github.com/data-platform-hq/terraform-azurerm-wwi-demos/commit/481ddeb7e7ea63293cd5cc07203e5510364e97c5))
+
 # 1.0.0 (2023-12-08)
 
 
