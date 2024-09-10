@@ -28,17 +28,17 @@ This module is provisioning Azure WWI Demo
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_debezium"></a> [debezium](#module\_debezium) | data-platform-hq/debezium/azurerm | 1.0.5 |
-| <a name="module_eventhub"></a> [eventhub](#module\_eventhub) | data-platform-hq/eventhub/azurerm | 1.1.0 |
-| <a name="module_logic_app_workflow_api"></a> [logic\_app\_workflow\_api](#module\_logic\_app\_workflow\_api) | data-platform-hq/logic-app-workflow/azurerm | 1.1.4 |
-| <a name="module_mssql_database"></a> [mssql\_database](#module\_mssql\_database) | data-platform-hq/mssql-database/azurerm | 1.1.0 |
-| <a name="module_mssql_server"></a> [mssql\_server](#module\_mssql\_server) | data-platform-hq/mssql-server/azurerm | 1.4.0 |
-| <a name="module_mssql_tde_key"></a> [mssql\_tde\_key](#module\_mssql\_tde\_key) | data-platform-hq/key-vault-key/azurerm | 1.0.0 |
-| <a name="module_resource_group_debezium"></a> [resource\_group\_debezium](#module\_resource\_group\_debezium) | data-platform-hq/resource-group/azurerm | 1.3.0 |
-| <a name="module_resource_group_wwi_demo"></a> [resource\_group\_wwi\_demo](#module\_resource\_group\_wwi\_demo) | data-platform-hq/resource-group/azurerm | 1.3.0 |
-| <a name="module_wwi_demo_secrets"></a> [wwi\_demo\_secrets](#module\_wwi\_demo\_secrets) | data-platform-hq/key-vault-secret/azurerm | 1.0.1 |
-| <a name="module_wwi_demo_virtual_machine"></a> [wwi\_demo\_virtual\_machine](#module\_wwi\_demo\_virtual\_machine) | data-platform-hq/linux-vm/azurerm | 1.0.2 |
-| <a name="module_wwi_demo_virtual_machine_extension"></a> [wwi\_demo\_virtual\_machine\_extension](#module\_wwi\_demo\_virtual\_machine\_extension) | data-platform-hq/vm-extension/azurerm | 1.0.1 |
+| <a name="module_debezium"></a> [debezium](#module\_debezium) | data-platform-hq/debezium/azurerm | 1.1.0 |
+| <a name="module_eventhub"></a> [eventhub](#module\_eventhub) | data-platform-hq/eventhub/azurerm | 1.2.0 |
+| <a name="module_logic_app_workflow_api"></a> [logic\_app\_workflow\_api](#module\_logic\_app\_workflow\_api) | data-platform-hq/logic-app-workflow/azurerm | 1.3.0 |
+| <a name="module_mssql_database"></a> [mssql\_database](#module\_mssql\_database) | data-platform-hq/mssql-database/azurerm | 1.2.0 |
+| <a name="module_mssql_server"></a> [mssql\_server](#module\_mssql\_server) | data-platform-hq/mssql-server/azurerm | 1.5.0 |
+| <a name="module_mssql_tde_key"></a> [mssql\_tde\_key](#module\_mssql\_tde\_key) | data-platform-hq/key-vault-key/azurerm | 1.1.0 |
+| <a name="module_resource_group_debezium"></a> [resource\_group\_debezium](#module\_resource\_group\_debezium) | data-platform-hq/resource-group/azurerm | 1.4.0 |
+| <a name="module_resource_group_wwi_demo"></a> [resource\_group\_wwi\_demo](#module\_resource\_group\_wwi\_demo) | data-platform-hq/resource-group/azurerm | 1.4.0 |
+| <a name="module_wwi_demo_secrets"></a> [wwi\_demo\_secrets](#module\_wwi\_demo\_secrets) | data-platform-hq/key-vault-secret/azurerm | 1.2.0 |
+| <a name="module_wwi_demo_virtual_machine"></a> [wwi\_demo\_virtual\_machine](#module\_wwi\_demo\_virtual\_machine) | data-platform-hq/linux-vm/azurerm | 1.1.0 |
+| <a name="module_wwi_demo_virtual_machine_extension"></a> [wwi\_demo\_virtual\_machine\_extension](#module\_wwi\_demo\_virtual\_machine\_extension) | data-platform-hq/vm-extension/azurerm | 1.2.0 |
 
 ## Resources
 

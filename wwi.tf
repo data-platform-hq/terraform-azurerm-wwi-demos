@@ -1,7 +1,7 @@
 module "resource_group_wwi_demo" {
   count   = var.microsoft_wwi_demo_enabled ? 1 : 0
   source  = "data-platform-hq/resource-group/azurerm"
-  version = "1.3.0"
+  version = "1.4.0"
 
   project  = var.project
   env      = var.env
@@ -14,7 +14,7 @@ module "resource_group_wwi_demo" {
 module "wwi_demo_virtual_machine" {
   count   = var.microsoft_wwi_demo_enabled ? 1 : 0
   source  = "data-platform-hq/linux-vm/azurerm"
-  version = "1.0.2"
+  version = "1.1.0"
 
   project        = var.project
   env            = var.env
@@ -37,7 +37,7 @@ resource "time_sleep" "wwi" {
 module "wwi_demo_virtual_machine_extension" {
   count   = var.microsoft_wwi_demo_enabled ? 1 : 0
   source  = "data-platform-hq/vm-extension/azurerm"
-  version = "1.0.1"
+  version = "1.2.0"
 
   extensions = {
     name               = "wwi-backup-restoration"

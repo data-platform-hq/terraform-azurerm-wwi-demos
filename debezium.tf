@@ -1,7 +1,7 @@
 module "resource_group_debezium" {
   count   = anytrue([var.eventhub_enabled, var.debezium_enabled]) ? 1 : 0
   source  = "data-platform-hq/resource-group/azurerm"
-  version = "1.3.0"
+  version = "1.4.0"
 
   project                    = var.project
   env                        = var.env
@@ -14,7 +14,7 @@ module "resource_group_debezium" {
 module "eventhub" {
   count   = var.eventhub_enabled ? 1 : 0
   source  = "data-platform-hq/eventhub/azurerm"
-  version = "1.1.0"
+  version = "1.2.0"
 
   project                         = var.project
   env                             = var.env
@@ -31,7 +31,7 @@ module "eventhub" {
 module "logic_app_workflow_api" {
   count   = var.debezium_enabled ? 1 : 0
   source  = "data-platform-hq/logic-app-workflow/azurerm"
-  version = "1.1.4"
+  version = "1.3.0"
 
   project        = var.project
   env            = var.env
@@ -44,7 +44,7 @@ module "logic_app_workflow_api" {
 module "debezium" {
   count   = var.debezium_enabled ? 1 : 0
   source  = "data-platform-hq/debezium/azurerm"
-  version = "1.0.5"
+  version = "1.1.0"
 
   project        = var.project
   env            = var.env
