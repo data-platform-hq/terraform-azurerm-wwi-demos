@@ -2,7 +2,7 @@
 module "wwi_demo_secrets" {
   count   = anytrue([var.mssql_enabled, var.microsoft_wwi_demo_enabled]) ? 1 : 0
   source  = "data-platform-hq/key-vault-secret/azurerm"
-  version = "1.0.1"
+  version = "1.2.0"
 
   key_vault_id = var.key_vault_id
   secrets = merge(
