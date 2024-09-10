@@ -94,7 +94,6 @@ This module is provisioning Azure WWI Demo
 | <a name="output_mssql_server"></a> [mssql\_server](#output\_mssql\_server) | MSSQL Server related outputs |
 | <a name="output_random_password"></a> [random\_password](#output\_random\_password) | Password for Admin Login on WWI SQL Server |
 | <a name="output_wwi_demo_virtual_machine"></a> [wwi\_demo\_virtual\_machine](#output\_wwi\_demo\_virtual\_machine) | Microsoft WWI SQL Server related outputs |
-
 <!-- END_TF_DOCS -->
 
 
