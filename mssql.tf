@@ -24,11 +24,8 @@ module "mssql_server" {
 module "mssql_database" {
   count   = var.mssql_enabled ? 1 : 0
   source  = "data-platform-hq/mssql-database/azurerm"
-  version = "1.0.1"
+  version = "1.1.0"
 
-  project     = var.project
-  env         = var.env
-  location    = var.location
   server_id   = module.mssql_server[0].id
   server_fqdn = module.mssql_server[0].fqdn
   databases   = var.mssql_database

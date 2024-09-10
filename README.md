@@ -11,7 +11,7 @@ This module is provisioning Azure WWI Demo
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0 |
-| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 3.75.0 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 4.0.1 |
 | <a name="requirement_random"></a> [random](#requirement\_random) | 3.5.1 |
 | <a name="requirement_time"></a> [time](#requirement\_time) | 0.9.2 |
 | <a name="requirement_tls"></a> [tls](#requirement\_tls) | >= 4.0.5 |
@@ -31,7 +31,7 @@ This module is provisioning Azure WWI Demo
 | <a name="module_debezium"></a> [debezium](#module\_debezium) | data-platform-hq/debezium/azurerm | 1.0.5 |
 | <a name="module_eventhub"></a> [eventhub](#module\_eventhub) | data-platform-hq/eventhub/azurerm | 1.1.0 |
 | <a name="module_logic_app_workflow_api"></a> [logic\_app\_workflow\_api](#module\_logic\_app\_workflow\_api) | data-platform-hq/logic-app-workflow/azurerm | 1.1.4 |
-| <a name="module_mssql_database"></a> [mssql\_database](#module\_mssql\_database) | data-platform-hq/mssql-database/azurerm | 1.0.1 |
+| <a name="module_mssql_database"></a> [mssql\_database](#module\_mssql\_database) | data-platform-hq/mssql-database/azurerm | 1.1.0 |
 | <a name="module_mssql_server"></a> [mssql\_server](#module\_mssql\_server) | data-platform-hq/mssql-server/azurerm | 1.4.0 |
 | <a name="module_mssql_tde_key"></a> [mssql\_tde\_key](#module\_mssql\_tde\_key) | data-platform-hq/key-vault-key/azurerm | 1.0.0 |
 | <a name="module_resource_group_debezium"></a> [resource\_group\_debezium](#module\_resource\_group\_debezium) | data-platform-hq/resource-group/azurerm | 1.3.0 |
