@@ -1,7 +1,7 @@
 module "mssql_server" {
   count   = var.mssql_enabled ? 1 : 0
   source  = "data-platform-hq/mssql-server/azurerm"
-  version = "1.5.0"
+  version = "1.5.1"
 
   project                  = var.project
   env                      = var.env
@@ -10,15 +10,15 @@ module "mssql_server" {
   tags                     = var.tags
   resource_group           = var.resource_group
 
-  admin_login              = var.sql_server_admin_login
-  admin_password           = coalesce(var.admin_password, random_password.sql_server_admin_password[0].result)
-  azure_ad_admin_login     = var.sql_azure_ad_admin_login
-  azure_ad_admin_object_id = var.sql_azure_ad_admin_object_id
-  ip_rules                 = var.mssql_server_ip_rules
-  tde_encryption_enabled   = var.mssql_tde_key_enabled
-  key_vault_id             = var.key_vault_id
-  key_vault_key_id         = try(module.mssql_tde_key[0].key_id, "")
-  mssql_defender_state     = var.mssql_defender_state
+  admin_login            = var.sql_server_admin_login
+  admin_password         = coalesce(var.admin_password, random_password.sql_server_admin_password[0].result)
+  azure_ad_admin_login   = var.sql_azure_ad_admin_login
+  azure_ad_object_id     = var.demos_sql_azure_ad_object_id
+  ip_rules               = var.mssql_server_ip_rules
+  tde_encryption_enabled = var.mssql_tde_key_enabled
+  key_vault_id           = var.key_vault_id
+  key_vault_key_id       = try(module.mssql_tde_key[0].key_id, "")
+  mssql_defender_state   = var.mssql_defender_state
 }
 
 module "mssql_database" {

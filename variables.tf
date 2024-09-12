@@ -24,102 +24,16 @@ variable "tags" {
   default     = {}
 }
 
-# Eventhubs
-variable "custom_eventhub_components_names" {
-  type = object({
-    namespace      = optional(string)
-    namespace_rule = optional(string)
-    topic          = optional(string)
-    topic_rule     = optional(string)
-  })
-  description = "Specifies the custom name of the resources in Eventhub module"
-  default     = {}
-}
-
-variable "custom_resource_group_name" {
-  type        = string
-  description = "Custom name for Resource Group"
-  default     = null
-}
-
 # Key Vault Config
 variable "key_vault_id" {
   type        = string
   description = "Azure Key Vault ID to use"
 }
 
-variable "key_vault_name" {
-  type        = string
-  description = "Azure Key Vault Name to use"
-}
-
-variable "tenant_id" {
-  type        = string
-  description = "Azure Tenant ID to use"
-}
-
 variable "secrets_expiration_date" {
   type        = string
   description = "Expiration UTC datetime (Y-m-d'T'H:M:S'Z')"
   default     = "2024-12-21T00:00:00Z"
-}
-
-# Event Hub
-variable "eventhub_enabled" {
-  type        = bool
-  description = "Boolean flag to specify whether Azure Event Hub is provisioned"
-  default     = false
-}
-
-variable "eventhub_topics" {
-  type = map(object({
-    partition_count   = string
-    message_retention = string
-    permissions       = list(string)
-  }))
-  description = "Map of eventhub topics"
-  default     = {}
-}
-
-# Debezium
-variable "debezium_enabled" {
-  type        = bool
-  description = "Boolean flag to specify whether Container Instance with Debezium is provisioned"
-  default     = false
-}
-
-variable "debezium_encryption_key" {
-  type        = bool
-  description = "Boolean flag to specify whether Container Instance with Debezium is CMK encrypted "
-  default     = false
-}
-
-variable "debezium_mssql_db_name" {
-  type        = string
-  description = "Name of target Database which would be used by Debezium"
-  default     = ""
-}
-
-variable "debezium_mssql_tables" {
-  type        = list(string)
-  description = "Tables with CDC enabled in target Database"
-  default     = []
-}
-
-variable "container_config" {
-  type = map(object({
-    image  = string
-    cpu    = string
-    memory = string
-  }))
-  description = "Version and capacity config for container"
-  default = {
-    "debezium" = {
-      image  = "debezium/connect:1.9",
-      cpu    = "4",
-      memory = "2"
-    }
-  }
 }
 
 # MSSQL
@@ -152,7 +66,7 @@ variable "sql_azure_ad_admin_login" {
   default     = null
 }
 
-variable "sql_azure_ad_admin_object_id" {
+variable "demos_sql_azure_ad_object_id" {
   type        = string
   description = "The login username of the Azure AD Administrator of this SQL Server."
   default     = null

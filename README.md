@@ -28,13 +28,9 @@ This module is provisioning Azure WWI Demo
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_debezium"></a> [debezium](#module\_debezium) | data-platform-hq/debezium/azurerm | 1.1.0 |
-| <a name="module_eventhub"></a> [eventhub](#module\_eventhub) | data-platform-hq/eventhub/azurerm | 1.2.0 |
-| <a name="module_logic_app_workflow_api"></a> [logic\_app\_workflow\_api](#module\_logic\_app\_workflow\_api) | data-platform-hq/logic-app-workflow/azurerm | 1.3.0 |
 | <a name="module_mssql_database"></a> [mssql\_database](#module\_mssql\_database) | data-platform-hq/mssql-database/azurerm | 1.2.0 |
-| <a name="module_mssql_server"></a> [mssql\_server](#module\_mssql\_server) | data-platform-hq/mssql-server/azurerm | 1.5.0 |
+| <a name="module_mssql_server"></a> [mssql\_server](#module\_mssql\_server) | data-platform-hq/mssql-server/azurerm | 1.5.1 |
 | <a name="module_mssql_tde_key"></a> [mssql\_tde\_key](#module\_mssql\_tde\_key) | data-platform-hq/key-vault-key/azurerm | 1.1.0 |
-| <a name="module_resource_group_debezium"></a> [resource\_group\_debezium](#module\_resource\_group\_debezium) | data-platform-hq/resource-group/azurerm | 1.4.0 |
 | <a name="module_resource_group_wwi_demo"></a> [resource\_group\_wwi\_demo](#module\_resource\_group\_wwi\_demo) | data-platform-hq/resource-group/azurerm | 1.4.0 |
 | <a name="module_wwi_demo_secrets"></a> [wwi\_demo\_secrets](#module\_wwi\_demo\_secrets) | data-platform-hq/key-vault-secret/azurerm | 1.2.0 |
 | <a name="module_wwi_demo_virtual_machine"></a> [wwi\_demo\_virtual\_machine](#module\_wwi\_demo\_virtual\_machine) | data-platform-hq/linux-vm/azurerm | 1.1.0 |
@@ -55,16 +51,8 @@ This module is provisioning Azure WWI Demo
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_admin_password"></a> [admin\_password](#input\_admin\_password) | Azure Admin Password to use | `string` | `null` | no |
-| <a name="input_container_config"></a> [container\_config](#input\_container\_config) | Version and capacity config for container | <pre>map(object({<br>    image  = string<br>    cpu    = string<br>    memory = string<br>  }))</pre> | <pre>{<br>  "debezium": {<br>    "cpu": "4",<br>    "image": "debezium/connect:1.9",<br>    "memory": "2"<br>  }<br>}</pre> | no |
-| <a name="input_custom_eventhub_components_names"></a> [custom\_eventhub\_components\_names](#input\_custom\_eventhub\_components\_names) | Specifies the custom name of the resources in Eventhub module | <pre>object({<br>    namespace      = optional(string)<br>    namespace_rule = optional(string)<br>    topic          = optional(string)<br>    topic_rule     = optional(string)<br>  })</pre> | `{}` | no |
-| <a name="input_custom_resource_group_name"></a> [custom\_resource\_group\_name](#input\_custom\_resource\_group\_name) | Custom name for Resource Group | `string` | `null` | no |
-| <a name="input_debezium_enabled"></a> [debezium\_enabled](#input\_debezium\_enabled) | Boolean flag to specify whether Container Instance with Debezium is provisioned | `bool` | `false` | no |
-| <a name="input_debezium_encryption_key"></a> [debezium\_encryption\_key](#input\_debezium\_encryption\_key) | Boolean flag to specify whether Container Instance with Debezium is CMK encrypted | `bool` | `false` | no |
-| <a name="input_debezium_mssql_db_name"></a> [debezium\_mssql\_db\_name](#input\_debezium\_mssql\_db\_name) | Name of target Database which would be used by Debezium | `string` | `""` | no |
-| <a name="input_debezium_mssql_tables"></a> [debezium\_mssql\_tables](#input\_debezium\_mssql\_tables) | Tables with CDC enabled in target Database | `list(string)` | `[]` | no |
+| <a name="input_demos_sql_azure_ad_object_id"></a> [demos\_sql\_azure\_ad\_object\_id](#input\_demos\_sql\_azure\_ad\_object\_id) | The login username of the Azure AD Administrator of this SQL Server. | `string` | `null` | no |
 | <a name="input_env"></a> [env](#input\_env) | Environment name | `string` | n/a | yes |
-| <a name="input_eventhub_enabled"></a> [eventhub\_enabled](#input\_eventhub\_enabled) | Boolean flag to specify whether Azure Event Hub is provisioned | `bool` | `false` | no |
-| <a name="input_eventhub_topics"></a> [eventhub\_topics](#input\_eventhub\_topics) | Map of eventhub topics | <pre>map(object({<br>    partition_count   = string<br>    message_retention = string<br>    permissions       = list(string)<br>  }))</pre> | `{}` | no |
 | <a name="input_key_vault_id"></a> [key\_vault\_id](#input\_key\_vault\_id) | Azure Key Vault ID to use | `string` | n/a | yes |
 | <a name="input_key_vault_name"></a> [key\_vault\_name](#input\_key\_vault\_name) | Azure Key Vault Name to use | `string` | n/a | yes |
 | <a name="input_location"></a> [location](#input\_location) | Azure location | `string` | n/a | yes |
@@ -79,7 +67,6 @@ This module is provisioning Azure WWI Demo
 | <a name="input_resource_group"></a> [resource\_group](#input\_resource\_group) | The name of the resource group in which to create MSSQL Server | `string` | n/a | yes |
 | <a name="input_secrets_expiration_date"></a> [secrets\_expiration\_date](#input\_secrets\_expiration\_date) | Expiration UTC datetime (Y-m-d'T'H:M:S'Z') | `string` | `"2024-12-21T00:00:00Z"` | no |
 | <a name="input_sql_azure_ad_admin_login"></a> [sql\_azure\_ad\_admin\_login](#input\_sql\_azure\_ad\_admin\_login) | The login username of the Azure AD Administrator of this SQL Server. | `string` | `null` | no |
-| <a name="input_sql_azure_ad_admin_object_id"></a> [sql\_azure\_ad\_admin\_object\_id](#input\_sql\_azure\_ad\_admin\_object\_id) | The login username of the Azure AD Administrator of this SQL Server. | `string` | `null` | no |
 | <a name="input_sql_server_admin_login"></a> [sql\_server\_admin\_login](#input\_sql\_server\_admin\_login) | The administrator login name for Azure SQL server | `string` | `"dpaf"` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Resource tags | `map(any)` | `{}` | no |
 | <a name="input_tenant_id"></a> [tenant\_id](#input\_tenant\_id) | Azure Tenant ID to use | `string` | n/a | yes |
@@ -89,7 +76,6 @@ This module is provisioning Azure WWI Demo
 
 | Name | Description |
 |------|-------------|
-| <a name="output_eventhub"></a> [eventhub](#output\_eventhub) | Eventhub related outputs |
 | <a name="output_mssql_database"></a> [mssql\_database](#output\_mssql\_database) | MSSQL Database elated outputs |
 | <a name="output_mssql_server"></a> [mssql\_server](#output\_mssql\_server) | MSSQL Server related outputs |
 | <a name="output_random_password"></a> [random\_password](#output\_random\_password) | Password for Admin Login on WWI SQL Server |
