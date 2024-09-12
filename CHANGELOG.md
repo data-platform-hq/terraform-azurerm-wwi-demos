@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/data-platform-hq/terraform-azurerm-wwi-demos/compare/v1.1.0...v1.1.1) (2024-09-12)
+
+
+### Bug Fixes
+
+* change to demos_sql_azure_ad_object_id variable, delete debezium ([030eded](https://github.com/data-platform-hq/terraform-azurerm-wwi-demos/commit/030ededdde64f27ac6aefaf009f3c41f0fcf867e))
+
 # [1.1.0](https://github.com/data-platform-hq/terraform-azurerm-wwi-demos/compare/v1.0.1...v1.1.0) (2024-09-10)
 
 
