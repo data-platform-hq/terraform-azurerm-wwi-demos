@@ -1,8 +1,3 @@
-output "eventhub" {
-  value       = try(module.eventhub[0][*], null)
-  description = "Eventhub related outputs"
-}
-
 output "mssql_server" {
   value       = try(module.mssql_server[0][*], null)
   description = "MSSQL Server related outputs"
