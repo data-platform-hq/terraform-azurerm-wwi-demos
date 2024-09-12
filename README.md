@@ -54,7 +54,6 @@ This module is provisioning Azure WWI Demo
 | <a name="input_demos_sql_azure_ad_object_id"></a> [demos\_sql\_azure\_ad\_object\_id](#input\_demos\_sql\_azure\_ad\_object\_id) | The login username of the Azure AD Administrator of this SQL Server. | `string` | `null` | no |
 | <a name="input_env"></a> [env](#input\_env) | Environment name | `string` | n/a | yes |
 | <a name="input_key_vault_id"></a> [key\_vault\_id](#input\_key\_vault\_id) | Azure Key Vault ID to use | `string` | n/a | yes |
-| <a name="input_key_vault_name"></a> [key\_vault\_name](#input\_key\_vault\_name) | Azure Key Vault Name to use | `string` | n/a | yes |
 | <a name="input_location"></a> [location](#input\_location) | Azure location | `string` | n/a | yes |
 | <a name="input_microsoft_wwi_demo_enabled"></a> [microsoft\_wwi\_demo\_enabled](#input\_microsoft\_wwi\_demo\_enabled) | Boolean flag that determines whether Microsoft WWI Demo in provisioned within Environment | `bool` | `false` | no |
 | <a name="input_mssql_database"></a> [mssql\_database](#input\_mssql\_database) | Map of databases to be deployed in Azure SQL | `map(any)` | `{}` | no |
@@ -69,7 +68,6 @@ This module is provisioning Azure WWI Demo
 | <a name="input_sql_azure_ad_admin_login"></a> [sql\_azure\_ad\_admin\_login](#input\_sql\_azure\_ad\_admin\_login) | The login username of the Azure AD Administrator of this SQL Server. | `string` | `null` | no |
 | <a name="input_sql_server_admin_login"></a> [sql\_server\_admin\_login](#input\_sql\_server\_admin\_login) | The administrator login name for Azure SQL server | `string` | `"dpaf"` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Resource tags | `map(any)` | `{}` | no |
-| <a name="input_tenant_id"></a> [tenant\_id](#input\_tenant\_id) | Azure Tenant ID to use | `string` | n/a | yes |
 | <a name="input_wwi_demo_subnet_id"></a> [wwi\_demo\_subnet\_id](#input\_wwi\_demo\_subnet\_id) | Microsoft WWI subnet | `string` | `null` | no |
 
 ## Outputs
