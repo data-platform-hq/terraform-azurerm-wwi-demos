@@ -10,19 +10,19 @@ This module is provisioning Azure WWI Demo
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0 |
-| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 4.0.1 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | 3.5.1 |
-| <a name="requirement_time"></a> [time](#requirement\_time) | 0.9.2 |
-| <a name="requirement_tls"></a> [tls](#requirement\_tls) | >= 4.0.5 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.3 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 4.0 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.5 |
+| <a name="requirement_time"></a> [time](#requirement\_time) | ~> 0.9 |
+| <a name="requirement_tls"></a> [tls](#requirement\_tls) | ~> 4.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_random"></a> [random](#provider\_random) | 3.5.1 |
-| <a name="provider_time"></a> [time](#provider\_time) | 0.9.2 |
-| <a name="provider_tls"></a> [tls](#provider\_tls) | >= 4.0.5 |
+| <a name="provider_random"></a> [random](#provider\_random) | ~> 3.5 |
+| <a name="provider_time"></a> [time](#provider\_time) | ~> 0.9 |
+| <a name="provider_tls"></a> [tls](#provider\_tls) | ~> 4.0 |
 
 ## Modules
 
@@ -40,10 +40,10 @@ This module is provisioning Azure WWI Demo
 
 | Name | Type |
 |------|------|
-| [random_password.sql_server_admin_password](https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password) | resource |
-| [random_password.sql_server_databricks_password](https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password) | resource |
-| [random_password.wwi_demo_login_password](https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password) | resource |
-| [time_sleep.wwi](https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/sleep) | resource |
+| [random_password.sql_server_admin_password](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password) | resource |
+| [random_password.sql_server_databricks_password](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password) | resource |
+| [random_password.wwi_demo_login_password](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password) | resource |
+| [time_sleep.wwi](https://registry.terraform.io/providers/hashicorp/time/latest/docs/resources/sleep) | resource |
 | [tls_private_key.wwi_demo](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/private_key) | resource |
 
 ## Inputs
