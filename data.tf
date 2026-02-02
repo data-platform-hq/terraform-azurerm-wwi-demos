@@ -27,7 +27,11 @@ resource "tls_private_key" "wwi_demo" {
 resource "random_password" "wwi_demo_login_password" {
   count = var.microsoft_wwi_demo_enabled ? 1 : 0
 
-  length           = 10
+  length           = 12
   special          = false
   override_special = "_!@#$%&*()-+="
+  min_upper        = 1
+  min_lower        = 1
+  min_numeric      = 1
+  min_special      = 1
 }
