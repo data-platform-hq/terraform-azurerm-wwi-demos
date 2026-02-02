@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/data-platform-hq/terraform-azurerm-wwi-demos/compare/v1.1.1...v1.2.0) (2026-02-02)
+
+
+### Features
+
+* change to use Ubuntu v22 ([c628521](https://github.com/data-platform-hq/terraform-azurerm-wwi-demos/commit/c6285217928b68c646372fcd820bb0c5e762313d))
+
 ## [1.1.1](https://github.com/data-platform-hq/terraform-azurerm-wwi-demos/compare/v1.1.0...v1.1.1) (2024-09-12)
 
 
