@@ -1,7 +1,7 @@
 module "mssql_server" {
   count   = var.mssql_enabled ? 1 : 0
   source  = "data-platform-hq/mssql-server/azurerm"
-  version = "1.5.2"
+  version = "1.6.0"
 
   project                  = var.project
   env                      = var.env
@@ -24,7 +24,7 @@ module "mssql_server" {
 module "mssql_database" {
   count   = var.mssql_enabled ? 1 : 0
   source  = "data-platform-hq/mssql-database/azurerm"
-  version = "1.3.0"
+  version = "1.4.0"
 
   server_id   = module.mssql_server[0].id
   server_fqdn = module.mssql_server[0].fqdn
@@ -35,7 +35,7 @@ module "mssql_database" {
 module "mssql_tde_key" {
   count   = alltrue([var.mssql_tde_key_enabled, var.mssql_enabled]) ? 1 : 0
   source  = "data-platform-hq/key-vault-key/azurerm"
-  version = "1.2.0"
+  version = "1.3.0"
 
   project                 = var.project
   env                     = var.env
