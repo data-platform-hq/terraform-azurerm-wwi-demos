@@ -11,7 +11,7 @@ This module is provisioning Azure WWI Demo
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >=1.3 |
-| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 4.0.1 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 4.0 |
 | <a name="requirement_random"></a> [random](#requirement\_random) | 3.5.1 |
 | <a name="requirement_time"></a> [time](#requirement\_time) | 0.9.2 |
 | <a name="requirement_tls"></a> [tls](#requirement\_tls) | >= 4.0.5 |
@@ -28,13 +28,13 @@ This module is provisioning Azure WWI Demo
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_mssql_database"></a> [mssql\_database](#module\_mssql\_database) | data-platform-hq/mssql-database/azurerm | 1.3.0 |
-| <a name="module_mssql_server"></a> [mssql\_server](#module\_mssql\_server) | data-platform-hq/mssql-server/azurerm | 1.5.2 |
-| <a name="module_mssql_tde_key"></a> [mssql\_tde\_key](#module\_mssql\_tde\_key) | data-platform-hq/key-vault-key/azurerm | 1.2.0 |
-| <a name="module_resource_group_wwi_demo"></a> [resource\_group\_wwi\_demo](#module\_resource\_group\_wwi\_demo) | data-platform-hq/resource-group/azurerm | 1.4.0 |
-| <a name="module_wwi_demo_secrets"></a> [wwi\_demo\_secrets](#module\_wwi\_demo\_secrets) | data-platform-hq/key-vault-secret/azurerm | 1.2.0 |
-| <a name="module_wwi_demo_virtual_machine"></a> [wwi\_demo\_virtual\_machine](#module\_wwi\_demo\_virtual\_machine) | data-platform-hq/linux-vm/azurerm | 1.2.1 |
-| <a name="module_wwi_demo_virtual_machine_extension"></a> [wwi\_demo\_virtual\_machine\_extension](#module\_wwi\_demo\_virtual\_machine\_extension) | data-platform-hq/vm-extension/azurerm | 1.3.0 |
+| <a name="module_mssql_database"></a> [mssql\_database](#module\_mssql\_database) | data-platform-hq/mssql-database/azurerm | 1.4.0 |
+| <a name="module_mssql_server"></a> [mssql\_server](#module\_mssql\_server) | data-platform-hq/mssql-server/azurerm | 1.6.0 |
+| <a name="module_mssql_tde_key"></a> [mssql\_tde\_key](#module\_mssql\_tde\_key) | data-platform-hq/key-vault-key/azurerm | 1.3.0 |
+| <a name="module_resource_group_wwi_demo"></a> [resource\_group\_wwi\_demo](#module\_resource\_group\_wwi\_demo) | data-platform-hq/resource-group/azurerm | 1.5.0 |
+| <a name="module_wwi_demo_secrets"></a> [wwi\_demo\_secrets](#module\_wwi\_demo\_secrets) | data-platform-hq/key-vault-secret/azurerm | 1.3.0 |
+| <a name="module_wwi_demo_virtual_machine"></a> [wwi\_demo\_virtual\_machine](#module\_wwi\_demo\_virtual\_machine) | data-platform-hq/linux-vm/azurerm | 1.3.0 |
+| <a name="module_wwi_demo_virtual_machine_extension"></a> [wwi\_demo\_virtual\_machine\_extension](#module\_wwi\_demo\_virtual\_machine\_extension) | data-platform-hq/vm-extension/azurerm | 1.4.0 |
 
 ## Resources
 
