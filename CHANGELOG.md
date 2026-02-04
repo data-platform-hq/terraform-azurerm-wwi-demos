@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/data-platform-hq/terraform-azurerm-wwi-demos/compare/v1.2.0...v1.3.0) (2026-02-04)
+
+
+### Features
+
+* upgrade provider to AzureRM v4.0 ([cc7875f](https://github.com/data-platform-hq/terraform-azurerm-wwi-demos/commit/cc7875f42fac74341541e9486fe970b846b83d18))
+
 # [1.2.0](https://github.com/data-platform-hq/terraform-azurerm-wwi-demos/compare/v1.1.1...v1.2.0) (2026-02-02)
 
 
