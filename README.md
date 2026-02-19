@@ -51,6 +51,7 @@ This module is provisioning Azure WWI Demo
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_admin_password"></a> [admin\_password](#input\_admin\_password) | Azure Admin Password to use | `string` | `null` | no |
+| <a name="input_custom_resource_group_name"></a> [custom\_resource\_group\_name](#input\_custom\_resource\_group\_name) | Custom name for Resource Group | `string` | `null` | no |
 | <a name="input_demos_sql_azure_ad_object_id"></a> [demos\_sql\_azure\_ad\_object\_id](#input\_demos\_sql\_azure\_ad\_object\_id) | The login username of the Azure AD Administrator of this SQL Server. | `string` | `null` | no |
 | <a name="input_env"></a> [env](#input\_env) | Environment name | `string` | n/a | yes |
 | <a name="input_key_vault_id"></a> [key\_vault\_id](#input\_key\_vault\_id) | Azure Key Vault ID to use | `string` | n/a | yes |
@@ -63,7 +64,6 @@ This module is provisioning Azure WWI Demo
 | <a name="input_mssql_server_name"></a> [mssql\_server\_name](#input\_mssql\_server\_name) | Azure Custom MSSQL Server Name to use | `string` | n/a | yes |
 | <a name="input_mssql_tde_key_enabled"></a> [mssql\_tde\_key\_enabled](#input\_mssql\_tde\_key\_enabled) | MSSQL tde key enable switch | `bool` | `false` | no |
 | <a name="input_project"></a> [project](#input\_project) | Project name | `string` | n/a | yes |
-| <a name="input_resource_group"></a> [resource\_group](#input\_resource\_group) | The name of the resource group in which to create MSSQL Server | `string` | n/a | yes |
 | <a name="input_secrets_expiration_date"></a> [secrets\_expiration\_date](#input\_secrets\_expiration\_date) | Expiration UTC datetime (Y-m-d'T'H:M:S'Z') | `string` | `"2024-12-21T00:00:00Z"` | no |
 | <a name="input_sql_azure_ad_admin_login"></a> [sql\_azure\_ad\_admin\_login](#input\_sql\_azure\_ad\_admin\_login) | The login username of the Azure AD Administrator of this SQL Server. | `string` | `null` | no |
 | <a name="input_sql_server_admin_login"></a> [sql\_server\_admin\_login](#input\_sql\_server\_admin\_login) | The administrator login name for Azure SQL server | `string` | `"dpaf"` | no |

@@ -3,11 +3,11 @@ module "resource_group_wwi_demo" {
   source  = "data-platform-hq/resource-group/azurerm"
   version = "1.5.0"
 
-  project  = var.project
-  env      = var.env
-  location = var.location
-  suffix   = "wwi-demo"
-  tags     = var.tags
+  project                    = var.project
+  env                        = var.env
+  location                   = var.location
+  custom_resource_group_name = var.custom_resource_group_name
+  tags                       = var.tags
 }
 
 # Virtual Machine for WWI Demo
