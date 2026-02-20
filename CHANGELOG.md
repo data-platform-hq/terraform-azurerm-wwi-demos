@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/data-platform-hq/terraform-azurerm-wwi-demos/compare/v1.2.0...v1.3.0) (2026-02-20)
+
+
+### Bug Fixes
+
+* rg name wwi demo, change random password length ([fd48355](https://github.com/data-platform-hq/terraform-azurerm-wwi-demos/commit/fd483553513300b767f0f6d5f1a7ef908a0bf5d4))
+
+
+### Features
+
+* upgrade provider to AzureRM v4.0 ([0aa6e17](https://github.com/data-platform-hq/terraform-azurerm-wwi-demos/commit/0aa6e17cafcc2de28806d4ed612ff398d65b35fe))
+
 # [1.3.0](https://github.com/data-platform-hq/terraform-azurerm-wwi-demos/compare/v1.2.0...v1.3.0) (2026-02-04)
 
 
