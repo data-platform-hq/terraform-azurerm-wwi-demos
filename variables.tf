@@ -13,11 +13,6 @@ variable "location" {
   description = "Azure location"
 }
 
-variable "resource_group" {
-  type        = string
-  description = "The name of the resource group in which to create MSSQL Server"
-}
-
 variable "tags" {
   type        = map(any)
   description = "Resource tags"
@@ -106,5 +101,12 @@ variable "microsoft_wwi_demo_enabled" {
 variable "wwi_demo_subnet_id" {
   type        = string
   description = "Microsoft WWI subnet"
+  default     = null
+}
+
+# Resource Group
+variable "custom_resource_group_name" {
+  type        = string
+  description = "Custom name for Resource Group"
   default     = null
 }

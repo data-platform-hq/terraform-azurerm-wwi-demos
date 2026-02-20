@@ -8,7 +8,7 @@ module "mssql_server" {
   location                 = var.location
   custom_mssql_server_name = var.mssql_server_name
   tags                     = var.tags
-  resource_group           = var.resource_group
+  resource_group           = module.resource_group_wwi_demo[0].name
 
   admin_login            = var.sql_server_admin_login
   admin_password         = coalesce(var.admin_password, random_password.sql_server_admin_password[0].result)
