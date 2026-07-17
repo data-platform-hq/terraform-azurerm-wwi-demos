@@ -12,16 +12,16 @@ This module is provisioning Azure WWI Demo
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >=1.3 |
 | <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 4.0 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.5.1 |
-| <a name="requirement_time"></a> [time](#requirement\_time) | >= 0.9.2 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.6 |
+| <a name="requirement_time"></a> [time](#requirement\_time) | ~> 0.13 |
 | <a name="requirement_tls"></a> [tls](#requirement\_tls) | >= 4.0.5 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_random"></a> [random](#provider\_random) | >= 3.5.1 |
-| <a name="provider_time"></a> [time](#provider\_time) | >= 0.9.2 |
+| <a name="provider_random"></a> [random](#provider\_random) | ~> 3.6 |
+| <a name="provider_time"></a> [time](#provider\_time) | ~> 0.13 |
 | <a name="provider_tls"></a> [tls](#provider\_tls) | >= 4.0.5 |
 
 ## Modules
